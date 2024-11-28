@@ -23,7 +23,7 @@ int main(void) {
         visited[i] = 0;
     }
 
-    bool is_solved = solveKnightTour(0, 0, 0, visited, size);
+    bool is_solved = solveKnightTour(0, 0, 1, visited, size);
 
     if (is_solved) {
         printf("Path found!");
@@ -36,7 +36,7 @@ int main(void) {
 }
 
 /**
- * @brief Check if there is a valid knight tour on the board with the given size. Good luck and hopefully enough time if you try size > 7.
+ * @brief Check if there is a valid knight tour on the board with the given size. Good luck and hopefully enough time if you try size > 8.
  * @param x x param to continue tour
  * @param y y param to continue tour
  * @param moveCount current move count
