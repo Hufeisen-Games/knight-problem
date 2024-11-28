@@ -9,7 +9,7 @@ bool solveKnightTour(int x, int y, int moveCount, bool* visited, int size);
 int dx[] = {2, 2, -2, -2, 1, 1, -1, -1};
 int dy[] = {1, -1, 1, -1, 2, -2, 2, -2};
 
-int main(void) {
+int main() {
 
     int size = 8;
 
@@ -45,17 +45,18 @@ int main(void) {
  * @return true when knight tour solved
  */
 bool solveKnightTour(int x, int y, int moveCount, bool* visited, int size) {
-    printf("Solving move %d\n", moveCount);
-
-    if (moveCount == size * size) {
-        return true;
-    }
+    //printf("Solving move %d\n", moveCount);
 
     if (!isValid(x, y, visited, size)) {
         return false;
     }
 
     visited[toIndex(x, y, size)] = 1;
+
+    if (moveCount == size * size) {
+        visited[toIndex(x, y, size)] = 1;
+        return true;
+    }
 
     for (int move = 0; move < 8; move++) {
         int next_x = x + dx[move];
