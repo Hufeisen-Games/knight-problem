@@ -36,8 +36,9 @@ int main() {
 }
 
 /**
- * @brief Check if there is a valid knight tour on the board with the given size. Good luck and hopefully enough time
- *        if you try size > 8 or size = 8 with this move configuration (dx, dy).
+ * @brief Check if there is a valid knight tour on the board with the given size. Good luck and hopefully enough time if you
+ *        try size > 8 or size = 8 with this move configuration (dx, dy). If you want to try size = 8 use this:
+ *        dx = {2, 1, -1, -2, -2, -1, 1, 2} and dy = {1, 2, 2, 1, -1, -2, -2, -1} (credit for dx and dy: @link(https://de.wikipedia.org/wiki/Springerproblem)
  * @param x x param to continue tour
  * @param y y param to continue tour
  * @param moveCount current move count
