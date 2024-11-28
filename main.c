@@ -36,7 +36,8 @@ int main() {
 }
 
 /**
- * @brief Check if there is a valid knight tour on the board with the given size. Good luck and hopefully enough time if you try size > 8.
+ * @brief Check if there is a valid knight tour on the board with the given size. Good luck and hopefully enough time
+ *        if you try size > 8 or size = 8 with this move configuration (dx, dy).
  * @param x x param to continue tour
  * @param y y param to continue tour
  * @param moveCount current move count
